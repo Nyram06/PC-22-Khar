@@ -1,0 +1,552 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        #about {
+          background-color: #1e1e1e; /* Темний фон */
+          color: white;              /* Білий текст */
+          padding: 2rem;             /* Внутрішній відступ */
+          margin: 2rem 0;            /* Зовнішній відступ зверху і знизу */
+          border-top: 4px solid orange; /* Верхня межа для акценту */
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тінь */
+          border-radius: 8px;        /* Закруглені кути */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff7f2a;
+            padding: 15px 30px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul.desktop-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #e0e0e0;
+        }
+        
+        .mobile-menu {
+            display: none;
+            background-color: #333;
+            position: absolute;
+            top: 60px; /* Позиція меню під header */
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        .mobile-menu.show {
+            display: block;
+        }
+
+        .menu-btn {
+            background-color: #ff7f2a;
+            border: none;
+            padding: 0px;
+            font-size: 18px;
+            color: white;
+            width: 2%;
+            cursor: pointer;
+            display: none; /* Приховуємо кнопку на десктопах */
+        }
+        .contact{
+            padding: 2rem;
+        }
+        .contact-btn {
+            background-color: #ff7f2a;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-btn:hover {
+            background-color: #e6691e;
+        }
+
+        .cta-btn, .download-btn, .calculate-btn {
+            background-color: #ff7f2a;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .cta-btn:hover, .download-btn:hover, .calculate-btn:hover {
+            background-color: #e6691e;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+        .container {
+          display: flex; /* Розташування блоків в ряд */
+        }
+
+        .calculator {
+          flex: 2; /* Цей блок буде вдвічі більший за інший */
+          padding: 20px;
+          background-color: #f0f0f0; /* Вибери свій колір фону */
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #262626;
+        }
+        .info {
+          flex: 1; /* Менший блок */
+          padding: 20px;
+          background-color: #dcdcdc; /* Вибери свій колір фону */
+        }
+
+        /* Видалення відступів між блоками */
+        .container > div {
+          margin: 0;
+        }
+
+          .container3 {
+            max-width: 1000px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+          }
+
+          h2 {
+            text-align: center;
+            margin-bottom: 30px;
+          }
+
+        .myth-row {
+          display: flex;
+          flex-direction: column; /* Ставить елементи зверху вниз */
+          align-items: center;     /* Центрує по горизонталі */
+          gap: 1rem;               /* Відступ між зображенням і текстом */
+          padding: 1rem;
+        }
+          }
+        .side-img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+          .myth-row p {
+            line-height: 1.6;
+            text-align: left;
+          }
+
+        .card {
+            background-color: #ff7f2a;
+            padding: 20px;
+            border-radius: 8px;
+            width: 40%;
+        }
+        .meal-plan, .calculator, .myth-section, .about-section {
+            text-align: center;
+            padding: 40px;
+            background-color: #262626;
+        }
+        .calculator input, .calculator select {
+            width: 30%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #444;
+            color: white;
+        }
+        .container2 {
+            background-color: #f38341; 
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container2 h2 {
+            text-align: center; 
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .flex-container {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            flex: 1;
+            max-width: 50%;
+            box-sizing: border-box;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .images img {
+            width: 60%; 
+            height: auto;
+            object-fit: cover;
+        }
+
+
+        .text-content {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            width: fit-content;
+        }
+        .medieval-kitchen {
+            background: #ff7f2a;
+            color: white;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px; 
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .icons img {
+            width: 40px;
+            height: 40px;
+        }
+        .myth-section {
+            background-color: #ff7f2a;
+            padding: 40px;
+            text-align: left;
+        }
+        .myth-section h2 {
+            text-align: center;
+        }
+        
+@media (max-width: 1024px) {
+    /* Загальні налаштування для .content */
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Стилі для карток */
+    .card {
+        width: 90%; /* Можна збільшити до 90% для кращого вигляду */
+        margin-bottom: 20px;
+    }
+
+    /* Контейнер для вмісту */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Стилі для калькулятора та інформації */
+    .calculator, .info {
+        width: 100%;
+        padding: 10px; /* Додано padding для відступів */
+    }
+
+    /* Гнучкий контейнер */
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Графічні та текстові елементи */
+    .images, .text-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Стилі для .images */
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Два стовпці */
+        justify-items: center;
+        gap: 20px; /* Відстань між зображеннями */
+    }
+
+    /* Зображення в .images */
+    .images img {
+        max-width: 100%;
+        object-fit: cover; /* Для кращого масштабування */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Сховати основне меню на мобільних пристроях */
+    nav ul.desktop-menu {
+        display: none;
+    }
+
+    /* Кнопка для відкриття меню */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 20px; /* Кнопка буде з правого боку */
+        top: 5.5%; /* Центруємо по вертикалі */
+        transform: translateY(-50%);
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 60px; /* Відстань під header */
+        left: 0;
+        right: 0;
+        background-color: #333;
+        z-index: 999;
+        text-align: center;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-menu a:hover {
+        background-color: #444;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Логотип */
+    .logo {
+        font-size: 20px; /* Зменшено розмір шрифту */
+    }
+
+    /* Кнопка контакту */
+    .contact-btn {
+        font-size: 16px; /* Зменшення шрифту */
+        padding: 8px 16px; /* Встановлення паддінгів */
+    }
+
+    /* Картки */
+    .card {
+        width: 90%; /* Ширина карток на мобільному пристрої */
+    }
+
+    /* Інпут та селекти калькулятора */
+    .calculator input,
+    .calculator select {
+        font-size: 16px; /* Розмір шрифту */
+        padding: 8px; /* Паддінги для полів вводу */
+    }
+
+    /* Заголовки в калькуляторі, міфи та інші секції */
+    .calculator h2,
+    .myth-section h2,
+    .container2 h2 {
+        font-size: 20px; /* Розмір заголовків */
+    }
+
+    /* Кнопки */
+    .button {
+        font-size: 16px; /* Розмір шрифту кнопок */
+        padding: 8px 12px; /* Паддінги для кнопок */
+    }
+
+    /* Зображення */
+    .images {
+        grid-template-columns: 1fr; /* Один стовпець для зображень */
+    }
+
+    /* Іконки */
+    .icons img {
+        width: 30px; /* Розмір іконок */
+        height: 30px; /* Розмір іконок */
+    }
+}
+.kontakty-btn {
+  padding: 10px 20px;
+  background-color: #FF7F27;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95); /* трохи прозорий чорний */
+  padding: 40px 0;
+  margin: 0 25ііpx;
+  z-index: 9999;
+}
+
+.form-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  background: black;
+  padding: 20px;
+  border: 1px solid #ccc;
+  color: white;
+}
+
+/* Кнопка закриття */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #5a8ea2;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #5a8ea2;
+  padding: 5px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+}
+
+.contact-form button[type="submit"] {
+  display: block;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  border: 1px solid #5a8ea2;
+  background-color: white;
+  color: #5a8ea2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #5a8ea2;
+  color: white;
+}
+ .pricing-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  margin: 40px 0;
+}
+
+.pricing-plan {
+  background-color: #f1fdf3;
+  border: 2px solid #a0d68e;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
+}
+
+.pricing-plan h2 {
+  color: #3b873e;
+}
+
+.price {
+  font-size: 24px;
+  color: #2c6e2c;
+  margin: 10px 0;
+}
+
+.pricing-plan ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-plan ul li {
+  margin: 8px 0;
+  color: #444;
+}
+
+.subscribe-btn {
+  background-color: #3b873e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #2c6e2c;
+}
+.select{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin: 14px 14;
+  padding: 10px 0;
+} 
