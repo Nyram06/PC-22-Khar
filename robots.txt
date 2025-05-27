@@ -3,5 +3,5 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://smartnutrition.com
+Sitemap: https://smartnutrition.com/sitemap.xml
 
