@@ -1,7 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /private/
 Allow: /
 
 Sitemap: https://nyram06.github.io/PC-22-Khar/
-
