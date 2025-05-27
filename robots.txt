@@ -3,5 +3,5 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://smartnutrition.com/sitemap.xml
+Sitemap: https://nyram06.github.io/PC-22-Khar/
 
