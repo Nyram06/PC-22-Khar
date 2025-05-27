@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nyram06.github.io/PC-22-Khar/sitemap.xml
