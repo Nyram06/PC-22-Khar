@@ -490,33 +490,24 @@ input, textarea {
   color: white;
 }
 
+div#premium-subscriptions {}
 
-.premium-btn {
-  background-color: #ff7f2a;
+.subscription {
+  background-color: #1e1e1e;
   color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 18px;
-  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255,127,42,0.4);
+  transition: transform 0.2s ease;
 }
-#bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  object-fit: cover;
-  opacity: 0.9; /* необов’язково: зробити трохи прозорішим */
+.subscription:hover {
+  transform: scale(1.05);
 }
 
-.subscriptions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.hidden {
+  display: none;
 }
 
 .select{
