@@ -6,4 +6,4 @@ Disallow: /offer.html
 Disallow: /subscribe-consent.html
 Disallow: /search
 
-Sitemap: https://nyram06.github.io/PC-22-Khar/
+Sitemap: https://Nyram06.github.io/PC-22-Khar/
