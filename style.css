@@ -583,7 +583,6 @@ input, textarea {
   position: fixed;
   top: 0;
   left: 0;
-  height: 450px; /* висота секції з відео */
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
