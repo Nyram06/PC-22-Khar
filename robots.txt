@@ -4,6 +4,6 @@ Allow: /
 Disallow: /privacy.html
 Disallow: /offer.html
 Disallow: /subscribe-consent.html
-
-Sitemap: https://Smart Nutrition.com/sitemap.xml
 Disallow: /search
+
+Sitemap: https://smartnutrition.com/sitemap.xml
