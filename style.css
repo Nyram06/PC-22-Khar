@@ -490,6 +490,35 @@ input, textarea {
   color: white;
 }
 
+
+.premium-btn {
+  background-color: #ff7f2a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.9; /* необов’язково: зробити трохи прозорішим */
+}
+
+.subscriptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 .select{
   background-color: black;
   color: white;
