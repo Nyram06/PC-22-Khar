@@ -180,14 +180,19 @@
     <section class="contact" id="contacts">
         <!-- Тут вміст розділу "Контакти" -->
          <footer>
-            <div>
-        <h3>Хочеш дізнатися більше про правильне харчування?</h3>
-        <p><strong>Зв’яжіться з нами:</strong></p>
-        <div style="display: flex; gap: 30px;">
-          
-            <a  class="kontakty-btn" href="contacts/">Контакти</a>
+             <div>
+                <h3>Хочеш дізнатися більше про правильне харчування?</h3>
+                    <p><strong>Зв’яжіться з нами:</strong></p>
+                        <div class="contact-row">
+                          <a class="kontakty-btn" href="contacts/">Контакти</a>
+                          <button class="kontakty-btn" onclick="toggleForm()">Повідомлення нам</button>
+                          <button onclick="toggleSubscriptions()" class="premium-btn">Преміум підписки</button>
+                          <p class="contact-info">+380 67 838 18 93</p>
+                          <p class="contact-info">smarnutrition@gmail.com</p>
+                        </div>
+             </div>
+                       
         
-<button class="kontakty-btn" onclick="toggleForm()">Зв'яжітьса з нами</button>
         <div class="modal-form" id="contactForm">
           <div class="form-wrapper">
             <button class="close-btn" onclick="toggleForm()">✖</button>
@@ -217,14 +222,6 @@
   </div>
  </div>
 
-    <!-- КНОПКА -->
-<button onclick="toggleSubscriptions()" class="premium-btn">Преміум підписки</button>
-        <p>+380 67 838 18 93</p>
-        <p>smarnutrition@gmail.com</p>
-    </div>
-        </footer>
-    </section>
-
 
 <!-- БЛОК З ПІДПИСКАМИ -->
 <div id="premium-subscriptions" class="subscriptions hidden">
@@ -250,7 +247,6 @@
   </div>
 </div>
 
-</div>
 
 
 <script>
