@@ -122,10 +122,10 @@
             padding: 50px;
             color: black;
              text-shadow:
-            -1px -1px 0 #FFA64D ,
-             1px -1px 0 #FFA64D ,
-            -1px  1px 0 #FFA64D ,
-             1px  1px 0 #FFA64D ;
+            -1px -1px 0 #808080 ,
+             1px -1px 0 #808080 ,
+            -1px  1px 0 #808080 ,
+             1px  1px 0 #808080 ;
          }
         .info {
           flex: 1; /* Менший блок */
