@@ -490,6 +490,14 @@ input, textarea {
   color: white;
 }
 
+
+.subscriptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 div#premium-subscriptions {}
 
 .subscription {
