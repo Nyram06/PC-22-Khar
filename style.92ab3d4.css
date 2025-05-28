@@ -111,8 +111,11 @@
 
         .calculator {
           flex: 2; /* Цей блок буде вдвічі більший за інший */
-          padding: 20px;
-          background-color: #f0f0f0; /* Вибери свій колір фону */
+          background-color: #f0f0f0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 40px;
         }
         .hero {
             text-align: center;
