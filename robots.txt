@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+Disallow: /privacy.html
+Disallow: /offer.html
+Disallow: /subscribe-consent.html
+
 Sitemap: https://Smart Nutrition.com/sitemap.xml
 User-agent: *
 Disallow: /search
