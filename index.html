@@ -19,6 +19,11 @@
     </style>
 </head>
 <body>
+    <video autoplay muted loop playsinline id="bg-video">
+  <source src="food.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
         <header>
             <div class="logo">🥗 Smart Nutrition</div>
             <nav>
@@ -54,10 +59,6 @@
             <section class="hero">
                 <h1>Оптимальне харчування для енергії та здоров'я</h1>
                 
-                <video autoplay muted loop playsinline style="width: 43%; max-width: 800px;">
-                  <source src="food.mp4" type="video/mp4">
-                </video>
-
                 <p>Дізнайся, як скласти збалансований раціон на основі наукових досліджень і персональних потреб.</p>
             <button class="cta-btn">Отримати безкоштовний чек-лист</button>
         </section>
@@ -82,10 +83,10 @@
                 <h2>Спробуй простий план харчування</h2>
                 <div class="flex-container">
                     <div class="images">
-                        <img src="image.jpg" alt="Сніданок" title="Вівсянка з ягодами + грецький йогурт" loading="lazy">
-                        <img src="image2.jpg" alt="Обід" title="Курка + кіноа + овочі" loading="lazy">
-                        <img src="image3.jpg" alt="Перекус" title="Горіхи + яблуко" loading="lazy">
-                        <img src="image4.jpg" alt="Вечеря" title="Лосось + броколі + авокадо" loading="lazy">
+                        <img src="image.svg" alt="Сніданок" title="Вівсянка з ягодами + грецький йогурт">
+                        <img src="image2.svg" alt="Обід" title="Курка + кіноа + овочі">
+                        <img src="image3.svg" alt="Перекус" title="Горіхи + яблуко">
+                        <img src="image4.svg" alt="Вечеря" title="Лосось + броколі + авокадо">
                     </div>
                     <div class="text-content">
                         <p><strong>Сніданок:</strong> Вівсянка з ягодами + грецький йогурт</p>
@@ -149,7 +150,7 @@
     <h2>Чи правда, що їсти після 18:00 шкідливо?</h2>
     
     <div class="myth-row">
-      <img src="image6.jpg" class="side-img" alt="Міф" title="Їсти, чи не їсти" loading="lazy">
+      <img src="image6.svg" class="side-img" alt="Міф" title="Їсти, чи не їсти">
       <p> ❌ Міф: Їсти після 18:00 шкідливо і веде до набору ваги
         ✅ Правда: Час прийому їжі не є головним фактором у наборі чи втраті ваги. Головне – це загальна кількість калорій, які ти споживаєш за день та баланс макронутрієнтів.
         Чому цей міф з’явився?
@@ -217,13 +218,6 @@
   </div>
  </div>
 </div>
-        <p>+380 67 838 18 93</p>
-        <p>smarnutrition@gmail.com</p>
-    </div>
-        </footer>
-    </section>
-
-    
 
 <!-- КНОПКА -->
 <button onclick="toggleSubscriptions()" class="premium-btn">Преміум підписки</button>
@@ -257,6 +251,7 @@
     <p><strong>₴499/міс</strong></p>
   </div>
 </div>
+
 
 
 
@@ -363,7 +358,7 @@
     });
   </script>
 
-    <script>
+<script>
   function toggleSubscriptions() {
     const section = document.getElementById('premium-subscriptions');
     section.classList.toggle('hidden');
