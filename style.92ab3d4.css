@@ -455,16 +455,6 @@
         height: 30px; /* Розмір іконок */
     }
 }
-.kontakty-btn {
-  background-color: #e6691e;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
 
 .modal-form {
   display: none;
@@ -623,16 +613,6 @@ input, textarea {
   opacity: 0.9;
 }
 
-.premium-btn {
-  background-color: #ff7f2a;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
 #bg-video {
   position: absolute;
   top: 0;
@@ -720,4 +700,37 @@ div#premium-subscriptions {}
 .social-links a:hover img {
   transform: scale(1.1);
 }
+
+
+
+
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.kontakty-btn, .premium-btn {
+  padding: 10px 20px;
+  background-color: #5a8ea2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.kontakty-btn:hover, .premium-btn:hover {
+  background-color: #497a88;
+}
+
+.contact-info {
+  margin: 0;
+  font-weight: 500;
+}
+
 
