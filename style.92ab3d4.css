@@ -290,7 +290,10 @@
         width: 90%; /* Можна збільшити до 90% для кращого вигляду */
         margin-bottom: 20px;
     }
-
+#bg-video {
+    height: 100vh;
+    width: 100vw;
+  }
     /* Контейнер для вмісту */
     .container {
         flex-direction: column;
@@ -362,7 +365,10 @@
         z-index: 999;
         text-align: center;
     }
-
+#bg-video {
+    height: 100vh;
+    width: 100vw;
+  }
     .mobile-menu ul {
         list-style: none;
         padding: 10px;
@@ -386,7 +392,10 @@
     .logo {
         font-size: 20px; /* Зменшено розмір шрифту */
     }
-
+#bg-video {
+    height: 100vh;
+    width: 100vw;
+  }
     /* Кнопка контакту */
     .contact-btn {
         font-size: 16px; /* Зменшення шрифту */
@@ -584,15 +593,15 @@ input, textarea {
   transform: scale(1.1);
 }
 #bg-video {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 450px; /* висота секції з відео */
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
-  opacity: 0.9; /* необов’язково: зробити трохи прозорішим */
+  object-position: center;
+  z-index: -1;
+  opacity: 0.9;
 }
 
 .premium-btn {
@@ -615,7 +624,6 @@ input, textarea {
   object-fit: cover;
   opacity: 0.9; /* необов’язково: зробити трохи прозорішим */
   object-position: center;
-  z-index: -1;
 }
 
 .subscriptions {
