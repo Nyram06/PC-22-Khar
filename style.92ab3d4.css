@@ -707,3 +707,18 @@ div#premium-subscriptions {}
   box-sizing: border-box;
 }
 
+.social-links {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-links img {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
