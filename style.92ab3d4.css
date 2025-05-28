@@ -732,8 +732,6 @@ div#premium-subscriptions {}
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 
@@ -742,6 +740,8 @@ div#premium-subscriptions {}
   background-color: #ff7f2a;
   color: white;
   border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
