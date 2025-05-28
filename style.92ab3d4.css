@@ -310,7 +310,11 @@
         flex-direction: column;
         align-items: center;
     }
-
+  .calculator input,
+  .calculator select {
+    width: 100%;
+    box-sizing: border-box;
+  }
     /* Графічні та текстові елементи */
     .images, .text-content {
         max-width: 100%;
@@ -365,6 +369,11 @@
         z-index: 999;
         text-align: center;
     }
+  .calculator input,
+  .calculator select {
+    width: 100%;
+    box-sizing: border-box;
+  }
 #bg-video {
     height: 100vh;
     width: 100vw;
@@ -392,6 +401,11 @@
     .logo {
         font-size: 20px; /* Зменшено розмір шрифту */
     }
+  .calculator input,
+  .calculator select {
+    width: 100%;
+    box-sizing: border-box;
+  }
 #bg-video {
     height: 100vh;
     width: 100vw;
