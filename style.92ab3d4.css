@@ -732,7 +732,10 @@ div#premium-subscriptions {}
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 
 .kontakty-btn, .premium-btn {
   padding: 10px 20px;
