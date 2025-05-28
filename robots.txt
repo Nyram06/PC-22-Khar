@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
 
-Disallow: /privacy.html
-Disallow: /offer.html
-Disallow: /subscribe-consent.html
+Disallow: /PC-22-Khar/privacy.html
+Disallow: /PC-22-Khar/offer.html
+Disallow: /PC-22-Khar/subscribe-consent.html
 Disallow: /search
 
 Sitemap: https://nyram06.github.io/PC-22-Khar/
