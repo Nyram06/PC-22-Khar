@@ -2,6 +2,7 @@
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
             color: white;
+            overflow-x: hidden;
             margin: 0;
             padding: 0;
         }
@@ -348,7 +349,10 @@
         top: 5.5%; /* Центруємо по вертикалі */
         transform: translateY(-50%);
     }
-
+    #background-video {
+        height: auto;
+        min-height: 100vh;
+    }
     .mobile-menu {
         position: absolute;
         top: 60px; /* Відстань під header */
