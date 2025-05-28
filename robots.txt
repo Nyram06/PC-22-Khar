@@ -6,4 +6,4 @@ Disallow: /offer.html
 Disallow: /subscribe-consent.html
 Disallow: /search
 
-Sitemap: https://smartnutrition.com/sitemap.xml
+Sitemap: https://nyram06.github.io/PC-22-Khar/
