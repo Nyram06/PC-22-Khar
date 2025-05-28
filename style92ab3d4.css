@@ -637,4 +637,7 @@ div#premium-subscriptions {}
 .hidden {
   display: none;
 }
+#breadcrumb {
+  display: none;
+}
 
