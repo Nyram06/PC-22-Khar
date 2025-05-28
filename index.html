@@ -19,8 +19,6 @@
     </style>
 </head>
 
-    <nav aria-label="breadcrumb" id="breadcrumb"></nav>
-
 <body>
     <video autoplay muted loop playsinline id="bg-video">
   <source src="food.mp4" type="video/mp4">
@@ -365,55 +363,6 @@
     const section = document.getElementById('premium-subscriptions');
     section.classList.toggle('hidden');
   }
-</script>
-
-                <script>
-  (function() {
-    const breadcrumbContainer = document.getElementById('breadcrumb');
-    if (!breadcrumbContainer) return;
-
-    const path = window.location.pathname.replace(/\/$/, '').split('/').filter(Boolean);
-
-    const ol = document.createElement('ol');
-    ol.className = 'breadcrumb';
-
-    // Додаємо головну сторінку
-    const homeLi = document.createElement('li');
-    homeLi.className = 'breadcrumb-item';
-    const homeLink = document.createElement('a');
-    homeLink.href = '/PC-22-Khar/';
-    homeLink.textContent = 'Головна';
-    homeLi.appendChild(homeLink);
-    ol.appendChild(homeLi);
-
-    let fullPath = '/PC-22-Khar/';
-
-    path.forEach((segment, index) => {
-      const li = document.createElement('li');
-      li.className = 'breadcrumb-item';
-
-      // Робимо назву з сегменту URL (прибираємо дефіси, перша буква велика)
-      const name = decodeURIComponent(segment).replace(/-/g, ' ');
-      const displayName = name.charAt(0).toUpperCase() + name.slice(1);
-
-      if (index === path.length - 1) {
-        // Остання — неклікабельна
-        li.textContent = displayName;
-        li.classList.add('active');
-        li.setAttribute('aria-current', 'page');
-      } else {
-        fullPath += segment + '/';
-        const a = document.createElement('a');
-        a.href = fullPath;
-        a.textContent = displayName;
-        li.appendChild(a);
-      }
-
-      ol.appendChild(li);
-    });
-
-    breadcrumbContainer.appendChild(ol);
-  })();
 </script>
 
 </body>
