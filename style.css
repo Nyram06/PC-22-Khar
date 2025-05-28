@@ -116,8 +116,13 @@
         .hero {
             text-align: center;
             padding: 50px;
-            background-color: #262626;
-        }
+            color: black;
+             text-shadow:
+            -1px -1px 0 #FFA64D ,
+             1px -1px 0 #FFA64D ,
+            -1px  1px 0 #FFA64D ,
+             1px  1px 0 #FFA64D ;
+         }
         .info {
           flex: 1; /* Менший блок */
           padding: 20px;
@@ -489,35 +494,6 @@ input, textarea {
   background-color: #5a8ea2;
   color: white;
 }
-
-
-.subscriptions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-div#premium-subscriptions {}
-
-.subscription {
-  background-color: #1e1e1e;
-  color: white;
-  padding: 20px;
-  border-radius: 12px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(255,127,42,0.4);
-  transition: transform 0.2s ease;
-}
-.subscription:hover {
-  transform: scale(1.05);
-}
-
-.hidden {
-  display: none;
-}
-
 .select{
   background-color: black;
   color: white;
@@ -548,4 +524,63 @@ div#premium-subscriptions {}
 .back-to-top:hover {
   background-color: #f0f0f0;
   transform: scale(1.1);
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 450px; /* висота секції з відео */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.9; /* необов’язково: зробити трохи прозорішим */
+}
+
+.premium-btn {
+  background-color: #ff7f2a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.9; /* необов’язково: зробити трохи прозорішим */
+}
+
+.subscriptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+div#premium-subscriptions {}
+
+.subscription {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255,127,42,0.4);
+  transition: transform 0.2s ease;
+}
+.subscription:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
 }
