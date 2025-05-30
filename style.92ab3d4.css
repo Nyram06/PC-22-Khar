@@ -156,7 +156,6 @@
           gap: 1rem;               /* Відступ між зображенням і текстом */
           padding: 1rem;
         }
-          }
         .side-img {
           max-width: 100%;
           height: auto;
@@ -486,7 +485,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.95); /* трохи прозорий чорний */
   padding: 40px 0;
-  margin: 0 25ііpx;
+  margin: 0 25px;
   z-index: 9999;
 }
 
@@ -597,7 +596,7 @@ input, textarea {
   color: white;
   cursor: pointer;
   margin: 14px 14;
-  padding: 10px 0;
+  padding: 10px 10;
 } 
 .back-to-top {
   position: fixed;
